@@ -1,0 +1,12 @@
+*.o
+/src/disc
+/src/pass.c
+/src/mkpass
+/src/agreed
+/src/td
+/src/tfn
+/td
+/tfn
+
+
+
