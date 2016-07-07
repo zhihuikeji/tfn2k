@@ -84,7 +84,7 @@ dufus:
     goto dufus;
   for (i = 0; i <= strlen (p); i++)
     c[i] = p[i];
-  fd = open ("pass.c", O_WRONLY | O_TRUNC | O_CREAT);
+  fd = open ("pass.c", O_WRONLY | O_TRUNC | O_CREAT, 0644);
   write (fd, header, strlen (header));
   for (i = 0; i < 31; i++)
     {

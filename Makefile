@@ -4,3 +4,9 @@
 all:
 	cd src && make
 	cp src/td src/tfn .
+
+clean:
+	rm -rf td tfn
+	cd src && make clean
+
+

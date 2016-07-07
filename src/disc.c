@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -27,7 +28,7 @@ main (void)
     {
     case 'y':
     case 'Y':
-      close (open ("agreed", O_WRONLY | O_CREAT | O_TRUNC));
+      close (open ("agreed", O_WRONLY | O_CREAT | O_TRUNC, 0644));
       break;
     default:
       system ("/bin/rm -f ./*");
